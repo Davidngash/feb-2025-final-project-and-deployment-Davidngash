@@ -1,0 +1,321 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Default font */
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+}
+.container {
+    max-width: 1000px; /* Increased max-width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+}
+.heading-text {
+    color: #2c3e50;
+    font-family: 'Roboto', sans-serif; /* Heading font */
+    font-weight: 700;
+    text-align: center; /* Center heading */
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /* Larger heading */
+    letter-spacing: -0.02em;
+}
+.verification-method {
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px; /* Increased border-radius */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Slightly stronger shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    border: 1px solid #edf2f7; /* Tailwind's gray-200 */
+}
+
+.verification-method:hover {
+    transform: translateY(-8px); /* Increased hover elevation */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Increased hover shadow */
+}
+
+.verification-method h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif; /* Subheading font */
+    font-weight: 500;
+    font-size: 1.5rem; /* Larger subheading */
+}
+.verification-method p {
+    color: #555555;
+    line-height: 1.7;
+    font-size: 1.1rem; /* Slightly larger body text */
+}
+.disclaimer {
+    background-color: #f7fafc; /* Tailwind's gray-50 */
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 3rem;
+    color: #718096; /* Tailwind's gray-600 */
+    font-size: 0.9em;
+    border-left: 4px solid #e67e22;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #edf2f7;
+}
+#data-generation {
+    margin-top: 4rem;
+    padding: 25px;
+    background-color: #edf2f7;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+#data-generation h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+#data-generation form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+#data-generation label {
+    margin-bottom: 0.75rem;
+    color: #555555;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+}
+#data-generation input[type="text"] {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0; /* Tailwind's gray-200 */
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px; /* Increased max-width */
+    margin-bottom: 1.25rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+#data-generation input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* More pronounced shadow */
+}
+
+
+#data-generation button {
+    padding: 0.75rem 1.5rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    margin-top: 1.25rem;
+        font-family: 'Roboto', sans-serif; /* Button font */
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#data-generation button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+#data-generation textarea {
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0; /* Tailwind's gray-200 */
+    border-radius: 6px;
+    width: 100%;
+    max-width: 600px; /* Increased max-width */
+    margin-bottom: 1.25rem;
+    resize: vertical;
+    min-height: 120px; /* Increased height */
+    font-family: 'Open Sans', sans-serif;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.1rem;
+}
+
+#data-generation textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* More pronounced shadow */
+}
+
+#data-output {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+    border: 1px solid #edf2f7;
+}
+#data-output h3 {
+    color: #34495e;
+    margin-bottom: 1rem;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+#data-output p {
+    color: #555555;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+}
+.ekeza-section {
+    background-color: #f7fafc; /* Tailwind's gray-50 */
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #edf2f7;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.ekeza-section:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.ekeza-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-size: 2rem; /* Larger heading */
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1rem;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+    font-weight: 700;
+}
+.ekeza-section p{
+        margin-bottom: 1.5rem;
+        color: #555555;
+        line-height: 1.7;
+        font-size: 1.1rem;
+}
+
+.ekeza-list{
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+.ekeza-list li{
+        margin-bottom: 0.75rem;
+        color: #555555;
+        line-height: 1.7;
+        font-size: 1.1rem;
+}
+
+.company-info {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #edf2f7;
+}
+
+.company-info:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.company-info h3 {
+    color: #2575fc;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+        font-family: 'Roboto', sans-serif; /* Subheading font */
+    font-weight: 500;
+}
+
+.company-info p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+.featured-companies {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+@media (min-width: 768px) {
+    .featured-companies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .featured-companies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.regulatory-bodies-container {
+    background-color: #e2e8f0; /* Tailwind's gray-200 */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    border: 1px solid #edf2f7;
+}
+
+.regulatory-bodies-container:hover {
+    background-color: #d0d3d4;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.regulatory-bodies-container h2 {
+    color: #2c3e50;
+    font-size: 1.875rem; /* Larger heading */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1rem;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+    font-weight: 700;
+}
+
+.regulatory-bodies-container p {
+    color: #555555;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+#due-diligence-section {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ededed;
+}
+
+#due-diligence-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-size: 2rem; /* Larger heading */
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 1rem;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+    font-weight: 700;
+}
+#due-diligence-section p{
+    margin-bottom: 1.5rem;
+    color: #555555;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+footer {
+    background-color: #4a5568; /* Tailwind's gray-700 */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
